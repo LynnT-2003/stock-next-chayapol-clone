@@ -7,9 +7,9 @@ export default function Home(props) {
   if (!employees) return (<div>Loading...</div>)
 
   const list = employees.map((employee) => (
-    <li key={employee.id}>
-      <Link href={`/employee/${employee.id}`}>
-        {employee.title}
+    <li key={employee.email}>
+      <Link href={`/employee/${employee.email}`}>
+        {employee.email}
       </Link>
     </li>
   ))
