@@ -5,8 +5,8 @@ export default async function handler(req, res) {
   const fileContents = await fs.readFile(jsonDirectory + "/employees.json", "utf8");
   const employees = JSON.parse(fileContents);
 
-  const p = employees.find((employee) => employee.id == req.query.id);
-  console.debug(req.query.id, p);
+  const p = employees.find((employee) => employee.email == req.query.email);
+  console.debug(req.query.email, p);
 
   if (!p) {
     res.status(404).json({ message: "Employee not found" });
