@@ -9,7 +9,7 @@ export default function AboutPage() {
     </Head>
     <h1>About Page</h1>
     <p>
-      From Lynn Thit, I despise you from the bottom of my heart.
+      About Chayapol.
     </p>
     <Link href="/">Home</Link>
     </>
