@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Chayapol Page</title>
+      <title>Lynn Thit Page</title>
     </Head>
-    <h1>Chayapol Page</h1>
+    <h1>Yes, it's still me Lynn Thit</h1>
     <p>
-      This is a sample page for Chayapol.
+      Remember my name.
     </p>
     <Link href="/about">About</Link>
     </>
