@@ -22,9 +22,9 @@ export default function EmployeePage(props) {
 }
 
 export async function getServerSideProps(context) {
-  console.log(`Fetching Employee ID: ${context.params['id']}`)
-  console.debug(`Fetching ${process.env.APIURL}employee/${context.params['id']}`)
-  const ret = await fetch(`${process.env.APIURL}employee/${context.params['id']}`)
+  console.log(`Fetching Employee Email: ${context.params['email']}`)
+  console.debug(`Fetching ${process.env.APIURL}employee/${context.params['email']}`)
+  const ret = await fetch(`${process.env.APIURL}employee/${context.params['email']}`)
   const employee = await ret.json()
   console.log(employee)
   return {
